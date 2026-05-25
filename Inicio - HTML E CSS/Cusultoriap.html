@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Cusultoriap.css" type="text/css">
+      <title>Cuna — Consultoria em Plantas & Arquitetura</title>
+</head>
+<body>
+
+<!-- Arquivo de estilos -->
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+
+  <!-- ========================================================
+       NAVEGAÇÃO (fixa no topo)
+  ======================================================== -->
+  <nav id="navegacao">
+    <div class="nav-logo">cuna</div>
+
+    <ul class="nav-links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#processo">Processo</a></li>
+    </ul>
+
+    <div class="nav-acoes">
+      <a href="#contato" class="botao botao-escuro">Agendar consulta</a>
+      <button class="nav-hamburguer" id="botaoMenu" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Menu gaveta para celular -->
+  <div class="nav-menu-mobile" id="menuMobile">
+    <a href="#sobre"    onclick="fecharMenuMobile()">Sobre</a>
+    <a href="#servicos" onclick="fecharMenuMobile()">Serviços</a>
+    <a href="#projetos" onclick="fecharMenuMobile()">Projetos</a>
+    <a href="#processo" onclick="fecharMenuMobile()">Processo</a>
+    <a href="#contato"  onclick="fecharMenuMobile()">Contato</a>
+  </div>
+
+
+  <!-- ========================================================
+       HERO (banner principal com imagem full screen)
+  ======================================================== -->
+  <section class="hero">
+
+    <!-- Imagem de fundo: troque a URL em estilo.css → .hero-imagem -->
+    <div class="hero-imagem"></div>
+
+    <!-- Badge flutuante -->
+    <div class="hero-badge">Biofilia<br />&amp;<br />Design</div>
+
+    <!-- Texto sobreposto na imagem -->
+    <div class="hero-conteudo revelar">
+      <p class="hero-subtitulo-topo">Consultoria em plantas &amp; arquitetura</p>
+
+      <h1 class="hero-titulo">
+        Espaços que<br />
+        <em>respiram</em><br />
+        vida
+      </h1>
+
+      <p class="hero-descricao">
+        Integramos paisagismo, biofilia e arquitetura para criar ambientes únicos —
+        de lares íntimos a grandes projetos corporativos.
+      </p>
+
+      <div class="hero-botoes">
+        <a href="#contato" class="botao botao-escuro">Quero uma consultoria</a>
+        <a href="#projetos" class="botao botao-contorno"
+           style="color:var(--branco); border-color:rgba(255,255,255,0.6);">
+          Ver projetos
+        </a>
+      </div>
+    </div>
+
+    <p class="hero-credito-foto">Projeto Residencial · São Paulo</p>
+
+  </section>
+
+
+  <!-- ========================================================
+       FAIXA DE VALORES
+  ======================================================== -->
+  <div class="faixa">
+    <div class="faixa-item"><span class="faixa-ponto"></span> Consultoria Residencial</div>
+    <div class="faixa-item"><span class="faixa-ponto"></span> Projetos Corporativos</div>
+    <div class="faixa-item"><span class="faixa-ponto"></span> Paisagismo Interior</div>
+    <div class="faixa-item"><span class="faixa-ponto"></span> Arquitetura Biofílica</div>
+    <div class="faixa-item"><span class="faixa-ponto"></span> Curadoria de Espécies</div>
+  </div>
+
+
+  <!-- ========================================================
+       SOBRE A CUNA
+  ======================================================== -->
+  <section class="sobre" id="sobre">
+
+    <!-- Imagem: troque a URL em estilo.css → .sobre-imagem -->
+    <div class="sobre-imagem">
+      <!-- Foto detalhe sobreposta: troque em estilo.css → .sobre-imagem-detalhe -->
+      <div class="sobre-imagem-detalhe"></div>
+    </div>
+
+    <div class="sobre-conteudo revelar">
+      <span class="etiqueta">Nossa história</span>
+
+      <h2>
+        Onde a natureza
+        <span>encontra a forma</span>
+      </h2>
+
+      <p>
+        A Cuna nasceu da crença de que plantas e arquitetura são linguagens que se
+        completam. Combinamos botânica, design de interiores e urbanismo para criar
+        experiências sensoriais que transformam espaços em refúgios vivos.
+      </p>
+      <p>
+        Nossa equipe multidisciplinar acompanha cada projeto do primeiro esboço à
+        última muda plantada — garantindo coerência estética, funcional e afetiva
+        em cada centímetro do seu ambiente.
+      </p>
+
+      <a href="#contato" class="botao botao-contorno" style="margin-top:1rem;">
+        Conheça nosso trabalho
+      </a>
+
+      <div class="sobre-numeros">
+        <div class="sobre-numero">
+          <h3>180+</h3>
+          <p>Projetos entregues</p>
+        </div>
+        <div class="sobre-numero">
+          <h3>9</h3>
+          <p>Anos de experiência</p>
+        </div>
+        <div class="sobre-numero">
+          <h3>98%</h3>
+          <p>Satisfação dos clientes</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ========================================================
+       SERVIÇOS DE CONSULTORIA
+  ======================================================== -->
+  <section class="servicos" id="servicos">
+
+    <div class="servicos-cabecalho revelar">
+      <h2>O que a<br />Cuna oferece</h2>
+      <p>
+        Cada serviço foi desenhado para integrar o verde ao espaço construído de forma
+        intencional — respeitando luz, escala e o ritmo de vida de quem habita.
+      </p>
+    </div>
+
+    <div class="servicos-grade">
+
+      <div class="servico-card revelar">
+        <div class="servico-icone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#3D5240" stroke-width="1.5">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+        </div>
+        <p class="servico-etiqueta">01 — Residencial</p>
+        <h3 class="servico-titulo">Consultoria<br />de Interiores Verdes</h3>
+        <p class="servico-descricao">Seleção, posicionamento e cuidado de plantas para residências. Criamos harmonia entre a vegetação e a identidade do lar.</p>
+        <span class="servico-numero">01</span>
+      </div>
+
+      <div class="servico-card revelar">
+        <div class="servico-icone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#3D5240" stroke-width="1.5">
+            <rect x="2" y="7" width="20" height="14" rx="2"/>
+            <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
+          </svg>
+        </div>
+        <p class="servico-etiqueta">02 — Corporativo</p>
+        <h3 class="servico-titulo">Projetos<br />Corporativos</h3>
+        <p class="servico-descricao">Ambientes de trabalho mais saudáveis e produtivos com a integração estratégica de plantas e jardins internos.</p>
+        <span class="servico-numero">02</span>
+      </div>
+
+      <div class="servico-card revelar">
+        <div class="servico-icone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#3D5240" stroke-width="1.5">
+            <path d="M12 22V12M12 12C12 7 7 4 2 6c0 6 4 10 10 10M12 12c0-5 5-8 10-6-1 6-5 10-10 10"/>
+          </svg>
+        </div>
+        <p class="servico-etiqueta">03 — Paisagismo</p>
+        <h3 class="servico-titulo">Paisagismo<br />Arquitetônico</h3>
+        <p class="servico-descricao">Jardins externos e fachadas verdes que dialogam com a linguagem arquitetônica da edificação e o entorno urbano.</p>
+        <span class="servico-numero">03</span>
+      </div>
+
+      <div class="servico-card revelar">
+        <div class="servico-icone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#3D5240" stroke-width="1.5">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 8v8M8 12h8"/>
+          </svg>
+        </div>
+        <p class="servico-etiqueta">04 — Biofilia</p>
+        <h3 class="servico-titulo">Design<br />Biofílico</h3>
+        <p class="servico-descricao">Aplicamos os princípios da biofilia — luz, água, textura e vegetação — para reconectar as pessoas à natureza dentro dos espaços construídos.</p>
+        <span class="servico-numero">04</span>
+      </div>
+
+      <div class="servico-card revelar">
+        <div class="servico-icone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#3D5240" stroke-width="1.5">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+        </div>
+        <p class="servico-etiqueta">05 — Curadoria</p>
+        <h3 class="servico-titulo">Curadoria<br />de Espécies</h3>
+        <p class="servico-descricao">Identificamos as plantas certas para cada microclima e intenção estética, garantindo beleza duradoura e baixa manutenção.</p>
+        <span class="servico-numero">05</span>
+      </div>
+
+      <div class="servico-card revelar">
+        <div class="servico-icone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#3D5240" stroke-width="1.5">
+            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+          </svg>
+        </div>
+        <p class="servico-etiqueta">06 — Manutenção</p>
+        <h3 class="servico-titulo">Plano de<br />Manutenção</h3>
+        <p class="servico-descricao">Planos mensais personalizados com visitas técnicas, replantio e atualização sazonal do seu jardim ou espaço verde interno.</p>
+        <span class="servico-numero">06</span>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================================================
+       GALERIA DE PROJETOS
+  ======================================================== -->
+  <section class="galeria" id="projetos">
+
+    <div class="galeria-cabecalho revelar">
+      <span class="etiqueta">Nossos projetos</span>
+      <h2>Cada espaço conta<br />uma história verde</h2>
+      <p>Uma seleção de ambientes que transformamos com curadoria botânica e sensibilidade arquitetônica.</p>
+    </div>
+
+    <!-- Fotos: troque as URLs em estilo.css → .galeria-item:nth-child(1..5) -->
+    <div class="galeria-grade">
+      <div class="galeria-item"><span class="galeria-legenda">Residência · Vila Madalena</span></div>
+      <div class="galeria-item"><span class="galeria-legenda">Escritório · Faria Lima</span></div>
+      <div class="galeria-item"><span class="galeria-legenda">Fachada Verde · Pinheiros</span></div>
+      <div class="galeria-item"><span class="galeria-legenda">Jardim Interno · Itaim</span></div>
+      <div class="galeria-item"><span class="galeria-legenda">Terraço · Higienópolis</span></div>
+    </div>
+
+    <div style="text-align:center; margin-top:3rem;">
+      <a href="#contato" class="botao botao-contorno">Ver todos os projetos</a>
+    </div>
+
+  </section>
+
+
+  <!-- ========================================================
+       PROCESSO DE CONSULTORIA
+  ======================================================== -->
+  <section class="processo" id="processo">
+
+    <div class="processo-interno">
+
+      <div class="processo-esquerda revelar">
+        <h2>Como funciona <em>a consultoria</em></h2>
+      </div>
+
+      <div class="processo-etapas">
+
+        <div class="etapa revelar">
+          <span class="etapa-numero">01</span>
+          <div class="etapa-corpo">
+            <h3>Diagnóstico do espaço</h3>
+            <p>Visitamos o ambiente para entender luz natural, circulação, umidade e intenção estética do projeto.</p>
+          </div>
+        </div>
+
+        <div class="etapa revelar">
+          <span class="etapa-numero">02</span>
+          <div class="etapa-corpo">
+            <h3>Proposta personalizada</h3>
+            <p>Elaboramos um projeto com seleção de espécies, disposição, vasos e integração com mobiliário e materiais arquitetônicos.</p>
+          </div>
+        </div>
+
+        <div class="etapa revelar">
+          <span class="etapa-numero">03</span>
+          <div class="etapa-corpo">
+            <h3>Execução &amp; implantação</h3>
+            <p>Nossa equipe realiza a implantação completa — do plantio à curadoria de detalhes como iluminação e irrigação.</p>
+          </div>
+        </div>
+
+        <div class="etapa revelar">
+          <span class="etapa-numero">04</span>
+          <div class="etapa-corpo">
+            <h3>Cuidado contínuo</h3>
+            <p>Oferecemos acompanhamento pós-implantação com visitas técnicas, ajustes sazonais e suporte remoto pelo nosso aplicativo.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================================================
+       DEPOIMENTOS
+  ======================================================== -->
+  <section class="depoimentos">
+
+    <div class="depoimentos-cabecalho revelar">
+      <span class="etiqueta" style="color:var(--linho)">O que dizem</span>
+      <h2>Quem viveu<br />a transformação</h2>
+    </div>
+
+    <div class="depoimentos-grade">
+
+      <div class="depoimento-card revelar">
+        <p class="depoimento-texto">"A Cuna transformou nosso escritório num jardim. A produtividade melhorou, o ambiente ficou mais acolhedor — e as visitas adoram."</p>
+        <div class="depoimento-autor">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Ana Lima"
+               style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+          <div class="depoimento-info">
+            <strong>Ana Lima</strong>
+            <span>CEO · Studio AL</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="depoimento-card revelar">
+        <p class="depoimento-texto">"Projeto impecável do início ao fim. Cada planta foi escolhida com cuidado para dialogar com a arquitetura da casa. Simplesmente incrível."</p>
+        <div class="depoimento-autor">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Rodrigo Mendes"
+               style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+          <div class="depoimento-info">
+            <strong>Rodrigo Mendes</strong>
+            <span>Arquiteto · São Paulo</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="depoimento-card revelar">
+        <p class="depoimento-texto">"Contratamos para o terraço e a equipe entendeu exatamente o que queríamos. O resultado superou todas as expectativas."</p>
+        <div class="depoimento-autor">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Camila Torres"
+               style="width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+          <div class="depoimento-info">
+            <strong>Camila Torres</strong>
+            <span>Engenheira · Campinas</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================================================
+       CONTATO / FORMULÁRIO
+  ======================================================== -->
+  <section class="contato-secao" id="contato">
+
+    <!-- Imagem: troque a URL em estilo.css → .contato-imagem -->
+    <div class="contato-imagem revelar"></div>
+
+    <div class="contato-conteudo revelar">
+      <span class="etiqueta">Agende sua consultoria</span>
+      <h2>Vamos criar seu <em>espaço vivo</em> juntos?</h2>
+      <p>Preencha o formulário e entraremos em contato em até 24 horas para agendar uma conversa sem compromisso sobre o seu projeto.</p>
+
+      <div class="formulario" id="formularioContato">
+        <input type="text"  placeholder="Seu nome completo" />
+        <input type="email" placeholder="E-mail" />
+        <input type="tel"   placeholder="WhatsApp" />
+        <select>
+          <option value="" disabled selected>Tipo de projeto</option>
+          <option>Residencial</option>
+          <option>Corporativo</option>
+          <option>Paisagismo Externo</option>
+          <option>Design Biofílico</option>
+          <option>Manutenção</option>
+        </select>
+        <textarea placeholder="Conte um pouco sobre o seu espaço..."></textarea>
+        <button class="botao botao-terracota"
+                onclick="alert('Mensagem enviada! Entraremos em contato em breve.')">
+          Enviar mensagem
+        </button>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ========================================================
+       RODAPÉ
+  ======================================================== -->
+  <footer>
+
+    <div class="rodape-topo">
+
+      <div class="rodape-marca">
+        <!-- Troque pelo logotipo: <img src="logo-branca.svg" alt="Cuna" style="width:110px"> -->
+        <div class="nav-logo" style="color:var(--branco)">cuna</div>
+        <p>Consultoria em plantas e arquitetura — criando espaços que respiram vida desde 2016.</p>
+      </div>
+
+      <div class="rodape-coluna">
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="#">Residencial</a></li>
+          <li><a href="#">Corporativo</a></li>
+          <li><a href="#">Paisagismo</a></li>
+          <li><a href="#">Design Biofílico</a></li>
+          <li><a href="#">Manutenção</a></li>
+        </ul>
+      </div>
+
+      <div class="rodape-coluna">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Projetos</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="rodape-coluna">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="mailto:oi@cuna.com.br">oi@cuna.com.br</a></li>
+          <li><a href="tel:+5511999999999">(11) 99999-9999</a></li>
+          <li><a href="#">@cuna.studio</a></li>
+          <li><a href="#">São Paulo — SP</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="rodape-base">
+      <p>© 2026 Cuna. Todos os direitos reservados.</p>
+      <p>Feito com cuidado &amp; muitas plantas 🌿</p>
+    </div>
+
+  </footer>
+
+
+
+
+
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+
+</body>
+</html>

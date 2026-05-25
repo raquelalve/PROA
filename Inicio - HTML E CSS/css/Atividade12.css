@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana;
+  font-weight: lighter;
+}
+
+ body{
+background-color: rgb(255, 255, 255);
+margin: 0;
+    }
+
+
+    header{
+  position: relative;
+  background: #000000;
+  text-align: center;
+  padding: 30px;
+  width: 95%;
+  height: 95px;
+  left: 30px
+    }
+
+    header h1{
+      position: relative;
+color: rgb(255, 255, 255);
+font-size: 40px;
+top: -5px;
+left: 40px;
+    }
+
+     .nav1{
+      position: relative;
+background-color: rgb(9, 9, 93);
+display: flex;
+justify-content: space-around;
+display: flex;
+  width: 95%;
+  left: 30px;
+  height: 50px;
+    }
+    
+    .nav1 a {
+color: aliceblue;
+padding: 15px 20px;
+text-decoration: none;
+    }
+
+    .nav1 a:hover{
+background: #1d2d60;
+    }
+
+     .nav2{
+      position: relative;
+      width: 260px;
+      height: 570px;
+      background-color: #9e9e9e;
+      left: 30px;
+    }
+
+    .nav2 a{
+color: rgb(255, 255, 255);
+padding: 19px;
+text-decoration: none;
+display: block;
+border-bottom: 1px solid #fdfdfd;
+    }
+
+    .Titulo{
+      position: relative;
+color: black;
+font-family: Verdana;
+top: -550px ;
+left: 660px;
+font-size: 25px;
+    }
+
+    img{
+      position: relative;
+      width: 60%;
+height: 240px;
+object-fit: cover;
+margin-top: 10px;
+top: -880px;
+left: 310px;
+}
+
+ .img2{
+      position: relative;
+      width: 16%;
+height: 578px;
+object-fit: cover;
+margin-top: 10px;
+top: -611px;
+left: 313px;
+z-index: 5;
+}
+
+.p2{
+position: relative;
+color: black;
+font-family: Verdana;
+top: -870px ;
+left: 310px;
+font-size: 17px;
+line-height: 1.5;
+text-align: left;
+z-index: 2;
+}
+
+.Azul{
+position: relative;
+      width: 900px;
+      height: 100px;
+      background-color: #97d9ff;
+      left: 310px;
+      top: -950px;
+z-index: 1;
+}
+
+.img3{
+position: relative;
+      width: 20%;
+height: 143px;
+object-fit: cover;
+margin-top: 10px;
+top: -950px;
+left: 310px;
+z-index: 5; 
+}
+
+.img4{
+position: relative;
+      width: 20%;
+height: 143px;
+object-fit: cover;
+margin-top: 10px;
+top: -950px;
+left: 314px;
+z-index: 5; 
+}
+
+.img5{
+position: relative;
+      width: 18%;
+height: 143px;
+object-fit: cover;
+margin-top: 10px;
+top: -950px;
+left: 316px;
+z-index: 5; 
+}
+
+footer{
+position: relative;
+  background: #000000;
+  text-align: center;
+  padding: 30px;
+  width: 95%;
+  height: 95px;
+  left: 30px;
+  top: -954px;
+  z-index: 5;
+}
+
+footer h2{
+      position: relative;
+color: rgb(255, 255, 255);
+font-size: 40px;
+top: -5px;
+left: 40px;
+    }
+
+    /*-------Visualização Tablet------------*/
+
+    @media only screen and (min-width: 491px){
+
+
+    }
+    @media only screen and (max-width: 720px) {
+ }
+
+    

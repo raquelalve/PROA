@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#Fundo{
+    position: relative;
+    background-color: #7a9bb7;
+    width: 960px;
+    height: 700px;
+    margin: auto;
+}
+
+
+
+
+#TOPO
+{
+    position: relative;
+    width: 960px;
+    height: 150px;
+    background-color: #2c858a;
+    color: #000000;
+    text-align: center;
+    padding: 40px;
+    z-index: 2;
+}
+#conteudo
+{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    text-align: left;
+    left: 200px;
+
+    background-color: #797979;
+    color: #000000;
+    padding: 40px;
+    z-index: 2;
+}
+#branco1
+{
+    position: absolute;
+    width: 245px;
+    height: 200px;
+    background-color: #ffffff;
+    left: 705px;
+    top: 150px;
+    z-index: 1;
+}
+#branco2
+{
+    position: absolute;
+    width: 245px;
+    height: 200px;
+    background-color: #ffffff;
+    left: 705px;
+    top:360px;
+    z-index: 1;
+}
+#camadaazul
+{
+    position: absolute;
+    width: 960px;
+    height: 5px;
+    background-color: #00a2ff;
+    color: #000000;
+    padding: 40px;
+    top: 650px;
+    z-index: 2;
+}
+
+img{
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    left: 580px;
+    top: 498px;
+    z-index: 3;
+}

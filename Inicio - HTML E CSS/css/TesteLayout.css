@@ -1,0 +1,47 @@
+#camada1{
+position: absolute; /*componente absoluto que está sobreposto á página*/
+width: 150px;
+height: 100px;
+background-color: rgb(247, 98, 155);
+border: 5px solid rgb(255, 144, 186);
+text-align: center;
+top: 200px;
+left: 200px;
+z-index: 1;
+}
+
+#camada2{
+position: absolute; /*componente absoluto que está sobreposto á página*/
+width: 250px;
+height: 250px;
+background-color: rgb(209, 54, 113);
+border: 5px solid rgb(255, 144, 186);
+text-align: center;
+top: 250px; /*posiciona apartir do topo da página*/
+left: 250px; /*posição á partir da esquerda da página*/
+z-index: 2;
+}
+
+#camada3{
+position: absolute; /*componente absoluto que está sobreposto á página*/
+width: 250px;
+height: 250px;
+background-color: rgba(54, 2, 22, 0.718);
+border: 5px solid rgb(128, 15, 58);
+text-align: center;
+top: 350px; /*posiciona apartir do topo da página*/
+left: 350px; /*posição á partir da esquerda da página*/
+z-index: 3;
+}
+
+#camada4{
+position: absolute;
+top: 250px;
+left: 250px;
+z-index: 4;
+}
+
+#camada4 img{
+width: 100px;
+height: 100px;
+}
