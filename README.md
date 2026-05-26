@@ -3,7 +3,8 @@
 <p align="center">
   <img src="./Imagensreadme/logo nome.png" alt="imagem da logo do nome do proa" width="50">
 </p>
-[![Acessar Site do PROA](./Imagensreadme/logo%20nome.png)](https://www.proa.org.br/quem-somos/)
+[![Acessar Site do PROA](./Imagensreadme/logo nome.png)](https://www.proa.org.br/quem-somos/)
+
 O PróProfissão é um programa de qualificação profissional gratuito voltado para jovens, criado pelo Instituto PROA em parceria com instituições de ensino. O projeto oferece capacitação do zero até o ingresso no mercado de tecnologia, ajudando a conectar os alunos formados com empresas parceiras, oferecendo formação técnica e desenvolvimento de habilidades comportamentais (soft skills) para facilitar o primeiro emprego.
 
 ##  Linguagens
