@@ -15,7 +15,6 @@ O PróProfissão é um programa de qualificação profissional gratuito voltado 
 
 ###  Tecnologias 
 
-
-
-#### 🛠️ Como executar o projeto
-Explique aqui como rodar o código no computador.
+* Figma 
+* Vscode
+* MySQL
