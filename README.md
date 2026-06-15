@@ -9,6 +9,10 @@
 O PróProfissão é um programa de qualificação profissional gratuito voltado para jovens, criado pelo Instituto PROA em parceria com instituições de ensino. O projeto oferece capacitação do zero até o ingresso no mercado de tecnologia, ajudando a conectar os alunos formados com empresas parceiras, oferecendo formação técnica e desenvolvimento de habilidades comportamentais (soft skills) para facilitar o primeiro emprego.
 </p>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 30dd863c466dbf545821f37c56ee8c9e8bfef066
 ##  Linguagens
 * HTML - CSS
 * Java
@@ -21,3 +25,4 @@ O PróProfissão é um programa de qualificação profissional gratuito voltado 
 * Figma 
 * Vscode
 * MySQL
+
