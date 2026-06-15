@@ -5,7 +5,6 @@ public class TelefoneCelular {
     private double preco;
     private boolean tem5G;
 
-    // Getters e Setters
     public string getMarca() { return marca; }
     public void setMarca(String marca) { this.marca = marca; }
 
@@ -26,14 +25,12 @@ public class Main {
     public static void main(string[] args) {
         TelefoneCelular meuCelular = new TelefoneCelular();
 
-        // Usando setters para atribuir valores
         meuCelular.setMarca("Samsung");
         meuCelular.setModelo("Galaxy S24");
         meuCelular.setArmazenamentoGB(256);
         meuCelular.setPreco(4500.00);
         meuCelular.setTem5G(true);
 
-        // Exibindo usando getters
         System.out.println("Marca: " + meuCelular.getMarca());
         System.out.println("Modelo: " + meuCelular.getModelo());
         System.out.println("Armazenamento: " + meuCelular.getArmazenamentoGB() + "GB");
