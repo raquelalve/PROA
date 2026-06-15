@@ -10,7 +10,6 @@ O PróProfissão é um programa de qualificação profissional gratuito voltado 
 </p>
 
 
-=======
 ##  Linguagens
 * HTML - CSS
 * Java
