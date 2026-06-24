@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Contar Números em Três Intervalos Diferentes</title>
+</head>
+<body>
+    <script>
+        let intervalo1 = 0; // 0 a 100
+        let intervalo2 = 0; // 101 a 200
+        let maioresQue200 = 0;
+
+        for (let i = 1; i <= 20; i++) {
+            let numero = parseFloat(prompt("Digite o " + i + "º número de 20:"));
+            
+            if (numero >= 0 && numero <= 100) {
+                intervalo1++;
+            } else if (numero >= 101 && numero <= 200) {
+                intervalo2++;
+            } else if (numero > 200) {
+                maioresQue200++;
+            }
+        }
+
+        document.write("Números entre 0 e 100: " + intervalo1 + "<br>");
+        document.write("Números entre 101 e 200: " + intervalo2 + "<br>");
+        document.write("Números maiores que 200: " + maioresQue200);
+    </script>
+</body>
+</html>

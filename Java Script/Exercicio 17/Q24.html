@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 24</title>
+</head>
+<body>
+    <script>
+        let soma = 0;
+        let rodando = true;
+
+        while (rodando) {
+            let numero = parseFloat(prompt("Exercício 24 - Digite um número (ou NEGATIVO para encerrar):"));
+            
+            if (numero < 0) {
+                rodando = false; 
+            } else {
+                soma += numero; 
+            }
+        }
+
+        document.write("<h2>A soma dos números positivos é: " + soma + "</h2>");
+    </script>
+</body>

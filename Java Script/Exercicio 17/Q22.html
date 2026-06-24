@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Contar Números Entre 0 e 100</title>
+</head>
+<body>
+    <script>
+        let contadorIntervalo = 0;
+        for (let i = 1; i <= 20; i++) {
+            let numero = parseFloat(prompt("Digite o " + i + "º número de 20:"));
+            if (numero >= 0 && numero <= 100) {
+                contadorIntervalo++;
+            }
+        }
+        document.write("Quantidade de números entre 0 e 100: " + contadorIntervalo);
+    </script>
+</body>
+</html>

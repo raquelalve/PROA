@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Programa que conta pessoas maiores de idade</title>
+</head>
+<body>
+    <script>
+        let maioresDeIdade = 0;
+        for (let i = 1; i <= 20; i++) {
+            let idade = parseInt(prompt("Digite a idade da " + i + "ª pessoa:"));
+            if (idade >= 18) {
+                maioresDeIdade++;
+            }
+        }
+        document.write("Quantidade de pessoas maiores de idade: " + maioresDeIdade);
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Crédito Especial - CEF</title>
+</head>
+<body>
+    <h1>Crédito Especial CEF</h1>
+
+    <script>
+        let saldoMedio = parseFloat(prompt("Digite o saldo médio do cliente no último ano:"));
+
+        let percentual = 0;
+        let valorCredito = 0;
+        
+        if (saldoMedio >= 0 && saldoMedio <= 500) {
+            percentual = 0;
+        } else if (saldoMedio >= 501 && saldoMedio <= 1000) {
+            percentual = 30;
+        } else if (saldoMedio >= 1001 && saldoMedio <= 3000) {
+            percentual = 40;
+        } else if (saldoMedio > 3000) {
+            percentual = 50;
+        }
+
+        valorCredito = saldoMedio * (percentual / 100);
+
+        document.write("<h2>Resumo do Crédito:</h2>");
+        document.write("Saldo Médio do Cliente: R$ " + saldoMedio.toFixed(2) + "<br>");
+        document.write("Percentual de Crédito: " + percentual + "%<br>");
+        document.write("<strong>Valor do Crédito Especial Concedido: R$ " + valorCredito.toFixed(2) + "</strong>");
+    </script>
+</body>
+</html>

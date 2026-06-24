@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Programa que calcula o valor total a ser pago com IPI</title>
+</head>
+<body>
+    <script>
+        let ipi = parseFloat(prompt("Digite a porcentagem do IPI:"));
+
+        let cod1 = prompt("Código da peça 1:");
+        let valor1 = parseFloat(prompt("Valor unitário da peça 1:"));
+        let quant1 = parseInt(prompt("Quantidade da peça 1:"));
+
+        let cod2 = prompt("Código da peça 2:");
+        let valor2 = parseFloat(prompt("Valor unitário da peça 2:"));
+        let quant2 = parseInt(prompt("Quantidade da peça 2:"));
+
+        let total = (valor1 * quant1 + valor2 * quant2) * (ipi / 100 + 1);
+
+        document.write("Valor total a ser pago: R$ " + total.toFixed(2));
+    </script>
+</body>
+</html>

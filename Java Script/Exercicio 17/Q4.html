@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Programa que mostra valores descendente</title>
+</head>
+<body>
+    <script>
+        let a = parseFloat(prompt("Digite o valor A:"));
+        let b = parseFloat(prompt("Digite o valor B:"));
+        let c = parseFloat(prompt("Digite o valor C:"));
+
+        if (a >= b && a >= c) {
+            if (b >= c) {
+                document.write("Ordem decrescente: " + a + ", " + b + ", " + c);
+            } else {
+                document.write("Ordem decrescente: " + a + ", " + c + ", " + b);
+            }
+        } else if (b >= a && b >= c) {
+            if (a >= c) {
+                document.write("Ordem decrescente: " + b + ", " + a + ", " + c);
+            } else {
+                document.write("Ordem decrescente: " + b + ", " + c + ", " + a);
+            }
+        } else {
+            if (a >= b) {
+                document.write("Ordem decrescente: " + c + ", " + a + ", " + b);
+            } else {
+                document.write("Ordem decrescente: " + c + ", " + b + ", " + a);
+            }
+        }
+    </script>
+</body>
+</html>

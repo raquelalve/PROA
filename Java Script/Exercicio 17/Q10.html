@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Programa que calcula o reajuste do saldo</title>
+</head>
+<body>
+    <script>
+        let saldo = parseFloat(prompt("Digite o saldo atual:"));
+        let saldoReajustado = saldo * 1.015; // Aumento de 1.5%
+
+        document.write("Saldo antigo: R$ " + saldo.toFixed(2) + "<br>");
+        document.write("Saldo com reajuste de 1.5%: R$ " + saldoReajustado.toFixed(2));
+    </script>
+</body>
+</html>

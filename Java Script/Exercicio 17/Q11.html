@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Programa que calcula o salário do vendedor</title>
+</head>
+<body>
+    <script>
+        let nome = prompt("Nome do vendedor:");
+        let salarioFixo = parseFloat(prompt("Salário fixo:"));
+        let totalVendas = parseFloat(prompt("Total de vendas no mês (em R$):"));
+
+        let comissao = totalVendas * 0.15;
+        let salarioFinal = salarioFixo + comissao;
+
+        document.write("Vendedor: " + nome + "<br>");
+        document.write("Salário Fixo: R$ " + salarioFixo.toFixed(2) + "<br>");
+        document.write("Salário Final (com comissão): R$ " + salarioFinal.toFixed(2));
+    </script>
+</body>
+</html>

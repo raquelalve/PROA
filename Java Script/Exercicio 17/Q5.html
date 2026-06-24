@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Programa que lê idade e informa a classe eleitoral
+    </title>
+</head>
+<body>
+    <script>
+        let idade = parseInt(prompt("Digite a idade da pessoa:"));
+
+        if (idade < 16) {
+            document.write("Classe eleitoral: Não eleitor");
+        } else if (idade >= 18 && idade < 65) {
+            document.write("Classe eleitoral: Eleitor obrigatório");
+        } else {
+            document.write("Classe eleitoral: Eleitor facultativo");
+        }
+    </script>
+</body>
+</html>

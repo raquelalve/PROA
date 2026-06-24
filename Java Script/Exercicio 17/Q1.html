@@ -1,23 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contador de calorias</title>
+    <title>Calculadora de calorias</title>
 </head>
 <body>
-    
-<h1>Quantidade total de calorias de uma
-refeição</h1>
+    <h1>Calculadora de calorias</h1>
 
-<script>
+    <script>
+        let prato = parseInt(prompt("Escolha o prato que deseja: \n1 - Vegetariano \n2 - Peixe \n3 - Frango \n4 - Carne"));
+        let sobremesa = parseInt(prompt("Escolha a sobremesa que deseja: \n1 - Abacaxi \n2 - Sorvete Diet \n3 - Mousse Diet \n4 - Mousse Chocolate"));
+        let bebida = parseInt(prompt("Escolha a bebida que deseja: \n1 - Chá \n2 - Suco de laranja \n3 - Suco de melão \n4 - Refrigerante diet"));
 
+        switch (prato) {
+            case 1:
+                prato = 180;
+                break;
+            case 2:
+                prato = 230;
+                break;
+            case 3:
+                prato = 250;
+                break;
+            case 4:
+                prato = 350;
+                break;
+            default: 
+                alert("Prato inválido. Insira um número de 1 a 4.");
+                prato = 0; 
+        }
 
+        switch (sobremesa) {
+            case 1:
+                sobremesa = 75;
+                break;
+            case 2:
+                sobremesa = 110;
+                break;
+            case 3:
+                sobremesa = 170;
+                break;
+            case 4:
+                sobremesa = 200;
+                break;
+            default: 
+                alert("Sobremesa inválida. Insira um número de 1 a 4.");
+                sobremesa = 0;
+        }
 
-</script>
+        switch (bebida) {
+            case 1:
+                bebida = 20;
+                break;
+            case 2:
+                bebida = 70;
+                break;
+            case 3:
+                bebida = 100;
+                break;
+            case 4:
+                bebida = 65;
+                break;
+            default: 
+                alert("Bebida inválida. Insira um número de 1 a 4.");
+                bebida = 0;
+        }
 
-
-
-
+        document.write("<h2>Total de calorias: " + (prato + sobremesa + bebida) + " cal</h2>");
+    </script>
 </body>
 </html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Programa que converte dólares para reais</title>
+</head>
+<body>
+    <script>
+        let cotacao = parseFloat(prompt("Digite a cotação atual do Dólar (US$):"));
+        let qtdDolar = parseFloat(prompt("Quantos dólares você possui?"));
+
+        let valorEmReais = qtdDolar * cotacao;
+
+        document.write("Valor em Reais: R$ " + valorEmReais.toFixed(2));
+    </script>
+</body>
+</html>

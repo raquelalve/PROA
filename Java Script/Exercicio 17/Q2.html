@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Divisibilidade</title>
+</head>
+<body>
+    <h1>Verificador de Divisibilidade</h1>
+
+    <script>
+        let numero = parseInt(prompt("Digite um número inteiro:"));
+
+        let mensagens = "";
+
+        if (numero % 10 === 0) {
+            mensagens += "O número " + numero + " é divisível por 10.<br>";
+        }
+        
+        if (numero % 5 === 0) {
+            mensagens += "O número " + numero + " é divisível por 5.<br>";
+        }
+        
+        if (numero % 2 === 0) {
+            mensagens += "O número " + numero + " é divisível por 2.<br>";
+        }
+
+        if (mensagens === "") {
+            document.write("<h2>O número " + numero + " não é divisível por 10, por 5 e nem por 2.</h2>");
+        } else {
+            
+            document.write("<h2>Resultado:</h2>");
+            document.write(mensagens);
+        }
+    </script>
+</body>
+</html>

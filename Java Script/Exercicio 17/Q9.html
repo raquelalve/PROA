@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Programa que calcula a quantidade de salários mínimos que o usuário recebe</title>
+</head>
+<body>
+    <script>
+        const salarioMinimo = 1212.00;
+        let salarioUsuario = parseFloat(prompt("Digite o valor do seu salário:"));
+        
+        let qtdSalarios = salarioUsuario / salarioMinimo;
+
+        document.write("Você ganha o equivalente a " + qtdSalarios.toFixed(2) + " salários mínimos.");
+    </script>
+</body>
+</html>

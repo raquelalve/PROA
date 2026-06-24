@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 25</title>
+</head>
+<body>
+    <script>
+        let soma = 0;
+        let rodando = true;
+
+        while (rodando) {
+            let numero = parseFloat(prompt("Exercício 25 - Digite um número (ou POSITIVO para encerrar):"));
+            
+            if (numero > 0) {
+                rodando = false; 
+            } else {
+                soma += numero; 
+            }
+        }
+
+        document.write("<h2>A soma dos números negativos é: " + soma + "</h2>");
+    </script>
+</body>
+</html>
