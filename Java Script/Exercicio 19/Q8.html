@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Imprimir de 1 até N</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("Digite um valor para N (maior que zero):"));
+
+        while (n <= 0) {
+            n = parseInt(prompt("Valor inválido! Digite um número maior que zero:"));
+        }
+
+        document.write("<h2>Valores de 1 até " + n + ":</h2>");
+        for (let i = 1; i <= n; i++) {
+            document.write(i + " ");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Média de Alunos e Contador de Aprovados</title>
+</head>
+<body>
+    <script>
+        let aprovados = 0;
+        let continuar = "S";
+
+        while (continuar === "S") {
+            let nota1 = parseFloat(prompt("Digite a primeira nota:"));
+            let nota2 = parseFloat(prompt("Digite a segunda nota:"));
+            
+            let media = (nota1 + nota2) / 2;
+            alert("A média final deste aluno é: " + media.toFixed(2));
+
+            if (media >= 9.5) {
+                aprovados++;
+            }
+
+            let resposta = prompt("Calcular a média de outro aluno? Sim/Não (S/N)");
+            continuar = resposta !== null ? resposta.toUpperCase() : "N";
+        }
+
+        document.write("<h2>Quantidade de alunos aprovados: " + aprovados + "</h2>");
+    </script>
+</body>
+</html>

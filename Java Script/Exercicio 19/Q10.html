@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabuadas de 1 até N</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("Até qual tabuada você deseja ver? Digite o valor de N:"));
+
+        for (let i = 1; i <= n; i++) {
+            document.write("<h3>Tabuada do " + i + "</h3>");
+            for (let j = 1; j <= 10; j++) {
+                document.write(i + " x " + j + " = " + (i * j) + "<br>");
+            }
+            document.write("<hr>"); 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Divisão Sem Zero ou Negativo</title>
+</head>
+<body>
+    <script>
+        let valor1 = parseFloat(prompt("Digite o primeiro valor:"));
+        let valor2 = parseFloat(prompt("Digite o segundo valor (maior que zero):"));
+
+        
+        while (valor2 <= 0) {
+            valor2 = parseFloat(prompt("Valor inválido! O segundo valor deve ser maior que ZERO:"));
+        }
+
+        let resultado = valor1 / valor2;
+        document.write("<h2>O resultado da divisão é: " + resultado + "</h2>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Média com 6 Notas Válidas (0 a 10)</title>
+</head>
+<body>
+    <script>
+        let somaNotas = 0;
+
+        for (let i = 1; i <= 6; i++) {
+            let nota = parseFloat(prompt("Digite a nota " + i + " (de 0 a 10):"));
+
+            // Valida se a nota está fora do limite e pede de novo se necessário
+            while (nota < 0 || nota > 10) {
+                nota = parseFloat(prompt("Nota inválida! Digite novamente a nota " + i + " (de 0 a 10):"));
+            }
+
+            somaNotas += nota;
+        }
+
+        let mediaFinal = somaNotas / 6;
+        document.write("<h2>A média simples das 6 notas é: " + mediaFinal.toFixed(2) + "</h2>");
+    </script>
+</body>
+</html>

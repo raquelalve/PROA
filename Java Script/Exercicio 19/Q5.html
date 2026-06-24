@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Média do Intervalo Informado pelo Usuário</title>
+</head>
+<body>
+    <script>
+        let valor1 = parseInt(prompt("Digite o primeiro número inteiro (menor):"));
+        let valor2 = parseInt(prompt("Digite o segundo número inteiro (maior):"));
+
+        let soma = 0;
+        let quantidade = 0;
+
+        for (let i = valor1; i <= valor2; i++) {
+            soma += i;
+            quantidade++;
+        }
+
+        let media = soma / quantidade;
+        document.write("<h2>A média entre os números informados é: " + media.toFixed(2) + "</h2>");
+    </script>
+</body>
+</html>

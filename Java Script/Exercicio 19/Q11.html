@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Contagem Dentro e Fora do Intervalo [24, 42]</title>
+</head>
+<body>
+    <script>
+        let dentroIntervalo = 0;
+        let foraIntervalo = 0;
+
+        for (let i = 1; i <= 10; i++) {
+            let valor = parseFloat(prompt("Digite o " + i + "º valor de 10:"));
+
+            if (valor >= 24 && valor <= 42) {
+                dentroIntervalo++;
+            } else {
+                foraIntervalo++;
+            }
+        }
+
+        document.write("<h2>Resultados dos valores analisados:</h2>");
+        document.write("Dentro do intervalo [24, 42]: " + dentroIntervalo + "<br>");
+        document.write("Fora do intervalo: " + foraIntervalo + "<br>");
+    </script>
+</body>
+</html>
