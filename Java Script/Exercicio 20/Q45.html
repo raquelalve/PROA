@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><meta charset="UTF-8"><title>Exercício 45</title></head>
+<body>
+    <script>
+        let CentralSoma = 0;
+        let totalCadastros = 0;
+        
+        for (; ; ) {
+            let nome = prompt("Digite o nome (ou 'fim' para parar):");
+            if (nome === null || nome.toLowerCase() === "fim") {
+                break; 
+            }
+            let idade = parseInt(prompt("Digite a idade de " + nome + ":"));
+            CentralSoma += idade;
+            totalCadastros++;
+        }
+        
+        if (totalCadastros > 0) {
+            document.write("Média final das idades: " + (CentralSoma / totalCadastros));
+        } else {
+            document.write("Nenhum registro computado.");
+        }
+    </script>
+</body>
+</html>

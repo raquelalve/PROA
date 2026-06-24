@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><meta charset="UTF-8"><title>Exercício 10</title></head>
+<body>
+    <script>
+        let termo1 = 0, termo2 = 1;
+        let contador = 1;
+        
+        document.write("Os 20 primeiros termos de Fibonacci:<br>");
+        while (contador <= 20) {
+            document.write(termo1 + " ");
+            let proximo = termo1 + termo2;
+            termo1 = termo2;
+            termo2 = proximo;
+            contador++;
+        }
+    </script>
+</body>
+</html>

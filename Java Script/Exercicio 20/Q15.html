@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><meta charset="UTF-8"><title>Exercício 15</title></head>
+<body>
+    <script>
+        let somaIdades = 0;
+        let qtdPessoas = 0;
+        let continuar = true;
+        
+        while (continuar) {
+            let nome = prompt("Digite o nome da pessoa (ou 'fim' para encerrar):");
+            if (nome === null || nome.toLowerCase() === "fim") {
+                continuar = false;
+            } else {
+                let idade = parseInt(prompt("Digite a idade de " + nome + ":"));
+                somaIdades += idade;
+                qtdPessoas++;
+            }
+        }
+        
+        if (qtdPessoas > 0) {
+            document.write("Média das idades informadas: " + (somaIdades / qtdPessoas));
+        } else {
+            document.write("Nenhuma idade foi cadastrada.");
+        }
+    </script>
+</body>
+</html>

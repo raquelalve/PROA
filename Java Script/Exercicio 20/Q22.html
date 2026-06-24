@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><meta charset="UTF-8"><title>Exercício 22</title></head>
+<body>
+    <script>
+        let num = parseInt(prompt("Digite um número inteiro:"));
+        let i = 1;
+        let divisores = 0;
+        do {
+            if (num % i === 0) {
+                divisores++;
+            }
+            i++;
+        } while (i <= num);
+        
+        if (divisores === 2) {
+            document.write(num + " é um número primo.");
+        } else {
+            document.write(num + " não é um número primo.");
+        }
+    </script>
+</body>
+</html>

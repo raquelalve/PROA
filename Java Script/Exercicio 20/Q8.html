@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><meta charset="UTF-8"><title>Exercício 8</title></head>
+<body>
+    <script>
+        let limite = parseInt(prompt("Exibir Fibonacci até qual valor limite?"));
+        let termo1 = 0, termo2 = 1;
+        
+        document.write("Sequência: ");
+        while (termo1 <= limite) {
+            document.write(termo1 + " ");
+            let proximo = termo1 + termo2;
+            termo1 = termo2;
+            termo2 = proximo;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><meta charset="UTF-8"><title>Exercício 23</title></head>
+<body>
+    <script>
+        let limite = parseInt(prompt("Digite o valor limite para Fibonacci:"));
+        let termo1 = 0, termo2 = 1;
+        
+        document.write("Sequência: ");
+        if (limite >= 0) {
+            do {
+                document.write(termo1 + " ");
+                let proximo = termo1 + termo2;
+                termo1 = termo2;
+                termo2 = proximo;
+            } while (termo1 <= limite);
+        }
+    </script>
+</body>
+</html>

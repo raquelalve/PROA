@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><meta charset="UTF-8"><title>Exercício 21</title></head>
+<body>
+    <script>
+        let num = parseInt(prompt("Digite um número inteiro positivo:"));
+        let i = 1;
+        document.write("Divisores: ");
+        do {
+            if (num % i === 0) {
+                document.write(i + " ");
+            }
+            i++;
+        } while (i <= num);
+    </script>
+</body>
+</html>

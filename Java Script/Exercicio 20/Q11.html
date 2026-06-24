@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><meta charset="UTF-8"><title>Exercício 11</title></head>
+<body>
+    <script>
+        let limite = parseInt(prompt("Digite o número limite:"));
+        let i = 1;
+        let soma = 0;
+        
+        while (i <= limite) {
+            if (i % 2 === 0) {
+                soma += i;
+            }
+            i++;
+        }
+        document.write("Soma dos pares de 1 até " + limite + ": " + soma);
+    </script>
+</body>
+</html>

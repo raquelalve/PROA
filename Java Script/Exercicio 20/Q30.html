@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><meta charset="UTF-8"><title>Exercício 30</title></head>
+<body>
+    <script>
+        let somaIdades = 0;
+        let qtdPessoas = 0;
+        let nome;
+        
+        do {
+            nome = prompt("Digite o nome (ou 'fim' para parar):");
+            if (nome !== null && nome.toLowerCase() !== "fim") {
+                let idade = parseInt(prompt("Digite a idade de " + nome + ":"));
+                somaIdades += idade;
+                qtdPessoas++;
+            }
+        } while (nome !== null && nome.toLowerCase() !== "fim");
+        
+        if (qtdPessoas > 0) {
+            document.write("Média das idades: " + (somaIdades / qtdPessoas));
+        } else {
+            document.write("Nenhuma pessoa cadastrada.");
+        }
+    </script>
+</body>
+</html>

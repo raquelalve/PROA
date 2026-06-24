@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><meta charset="UTF-8"><title>Exercício 24</title></head>
+<body>
+    <script>
+        let somaIdades = 0;
+        let i = 1;
+        do {
+            let nome = prompt("Digite o nome da " + i + "ª pessoa:");
+            let idade = parseInt(prompt("Digite a idade de " + nome + ":"));
+            somaIdades += idade;
+            i++;
+        } while (i <= 5);
+        document.write("Média das idades: " + (somaIdades / 5));
+    </script>
+</body>
+</html>
