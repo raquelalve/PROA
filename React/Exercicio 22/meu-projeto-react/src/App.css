@@ -1,0 +1,240 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../public/guitarra_fundo_body1.png');
+  background-repeat: no-repeat;
+  background-size: 100% 500px;
+  font-family: verdana;
+}
+
+main {
+  position: relative;
+  background-color: rgba(225, 0, 0, 0.322);
+  width: 80%;
+  height: auto;
+  margin: 2% auto;
+}
+
+header {
+  position: relative;
+  display: flex;
+  align-items: flex-end; 
+  justify-content: flex-end;
+  width: 100%;
+  height: 150px;
+  background-image: url('../public/guitarras_header1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  margin-bottom: 1rem;
+  margin-right: 3rem;
+  align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
+  height: 40px;
+  background-color: #fff;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(115, 0, 0);
+  font-weight: bold;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 250px;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+#section1 {
+  align-items: center;
+  height: 340px;
+  background-color: rgb(194, 0, 0);
+  padding: 20px 0;
+}
+
+#section1 .info-content {
+  position: relative;
+  width: 40%;
+  height: 240px;
+  background-color: rgb(187, 122, 122);
+  padding: 1rem;
+}
+
+#section1 .info-content h2 {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+#section1 .info-content p {
+  margin-top: 1rem;
+  color: #fff;
+  font-size: 0.9rem
+}
+
+#section1 .info-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+#section1 .info-image {
+  width: 40%;
+}
+
+
+#section2 {
+  background-color: #fff;
+  align-items: center;
+  padding: 20px 0;
+}
+
+
+.product-card {
+  margin-top: 1rem;
+  width: 20%;
+  height: 260px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.product-card p {
+  font-family: verdana;
+  font-size: 0.8rem;
+  padding: 5px;
+}
+
+#preco {
+  color: rgba(213, 0, 0, 0.808);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+
+#section3 {
+  background-color: #b74c00;
+  padding: 20px 0;
+  align-items: center;
+}
+
+
+
+#section3 .info-content {
+  background-color: rgba(189, 83, 83, 0.804);
+  width: 45%;
+  height: 230px;
+}
+
+#section3 h2, #section3 p {
+  color: #ffffff;
+  margin: 1rem 2rem;
+}
+
+
+#section4 {
+  background-color: #fff;
+  padding: 20px 0;
+}
+
+#div1_section4 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 1rem;
+}
+
+#div1_section4 input {
+  width: 100%;
+  height: 40px; 
+  margin-bottom: 1rem;
+  border: 1px solid #000;
+  padding-left: 10px;
+}
+
+#div1_section4 #pedido {
+  height: 100px; 
+}
+
+#div1_section4 button {
+  width: 100%;
+  height: 50px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+#div1_section4 button:hover {
+  background-color: #000;
+}
+
+#div2_section4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+#div2_section4 p {
+  color: rgb(0, 0, 166);
+  margin-bottom: 15px;
+}
+
+.container_img {
+  display: flex;
+  gap: 15px;
+}
+
+.container_img img {
+  width: 40px;
+  height: 40px;
+}
+
+
+footer {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #000;
+  color: #fff;
+}
+
+.container_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.container_img_footer {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.container_img_footer img {
+  width: 30px;
+  height: 30px;
+}
