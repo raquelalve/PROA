@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 23</title>
+</head>
+<body>
+    <script>
+        const conjuntoValores = [];
+        for (let i = 0; i < 3; i++) {
+            for (let j = 0; j < 3; j++) {
+                conjuntoValores.push(parseInt(prompt(`Digite o item da posição [${i}][${j}]:`)));
+            }
+        }
+        alert("O menor valor inserido na matriz foi: " + Math.min(...conjuntoValores));
+    </script>
+</body>
+</html>

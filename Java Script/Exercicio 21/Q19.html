@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 19</title>
+</head>
+<body>
+    <script>
+                const matA = [[], []], matB = [[], []], matSoma = [[], []];
+        
+        alert("Preencha a Matriz A:");
+        for(let i=0; i<2; i++) {
+            for(let j=0; j<2; j++) matA[i][j] = parseInt(prompt(`A [${i}][${j}]:`));
+        }
+        
+        alert("Preencha a Matriz B:");
+        for(let i=0; i<2; i++) {
+            for(let j=0; j<2; j++) {
+                matB[i][j] = parseInt(prompt(`B [${i}][${j}]:`));
+                matSoma[i][j] = matA[i][j] + matB[i][j];
+            }
+        }
+        
+        let resultadoVisual = "Resultado da Soma:\n";
+        for(let i=0; i<2; i++) {
+            resultadoVisual += "[ " + matSoma[i].join(" | ") + " ]\n";
+        }
+        alert(resultadoVisual);
+
+    </script>
+</body>
+</html>

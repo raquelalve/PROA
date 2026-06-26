@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 24</title>
+</head>
+<body>
+    <script>
+        const matrizDados = [];
+        for(let i=0; i<3; i++) {
+            matrizDados[i] = [];
+            for(let j=0; j<3; j++) matrizDados[i][j] = parseInt(prompt(`Posição [${i}][${j}]:`));
+        }
+        
+        const ehSimetrica = (matrizDados[0][1] === matrizDados[1][0] && 
+                             matrizDados[0][2] === matrizDados[2][0] && 
+                             matrizDados[1][2] === matrizDados[2][1]);
+                             
+        alert(ehSimetrica ? "A matriz informada É simétrica!" : "A matriz NÃO é simétrica.");
+    </script>
+</body>
+</html>

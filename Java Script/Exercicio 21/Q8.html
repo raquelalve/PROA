@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 08</title>
+</head>
+<body>
+    <script>
+       const listaPares = [];
+        const listaImpares = [];
+        
+        for (let i = 0; i < 5; i++) {
+            const num = parseInt(prompt(`Digite o ${i + 1}º número:`));
+            num % 2 === 0 ? listaPares.push(num) : listaImpares.push(num);
+        }
+        
+        const calcularMedia = (vetor) => vetor.length ? (vetor.reduce((acc, val) => acc + val, 0) / vetor.length).toFixed(2) : 0;
+        
+        alert(`Média dos Pares: ${calcularMedia(listaPares)} | Média dos Ímpares: ${calcularMedia(listaImpares)}`);
+    </script>
+</body>
+</html>

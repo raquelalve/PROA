@@ -1,0 +1,57 @@
+header{
+    position: relative;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo_agencia{
+    width: 120px;
+    height: 120px;
+}
+
+.menu{
+    width: 50%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ul{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.pesquisa{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.busca{
+    width: 200px;
+    height: 20px;
+}
+
+.lupa{
+    width: 30px;
+    height: 30px;
+}

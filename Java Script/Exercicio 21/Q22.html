@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 22</title>
+</head>
+<body>
+    <script>
+        const m1 = [[], []], m2 = [[], []], produto = [[0,0], [0,0]];
+        
+        alert("Dados da Matriz 1:");
+        for(let i=0; i<2; i++) for(let j=0; j<2; j++) m1[i][j] = parseInt(prompt(`M1 [${i}][${j}]:`));
+        
+        alert("Dados da Matriz 2:");
+        for(let i=0; i<2; i++) for(let j=0; j<2; j++) m2[i][j] = parseInt(prompt(`M2 [${i}][${j}]:`));
+        
+        for(let i=0; i<2; i++) {
+            for(let j=0; j<2; j++) {
+                for(let k=0; k<2; k++) {
+                    produto[i][j] += m1[i][k] * m2[k][j];
+                }
+            }
+        }
+        
+        let resultadoVisual = "Matriz Produto:\n";
+        for(let i=0; i<2; i++) {
+            resultadoVisual += "[ " + produto[i].join(" | ") + " ]\n";
+        }
+        alert(resultadoVisual);
+    </script>
+</body>
+</html>

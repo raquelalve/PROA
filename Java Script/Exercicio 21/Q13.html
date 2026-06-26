@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 13</title>
+</head>
+<body>
+    <script>
+         let contadorIntervalo = 0;
+        for (let i = 0; i < 10; i++) {
+            const numero = parseInt(prompt(`Digite o ${i + 1}º número:`));
+            if (numero >= 10 && numero <= 50) {
+                contadorIntervalo++;
+            }
+        }
+        alert("Quantidade de números entre 10 e 50: " + contadorIntervalo);
+    </script>
+</body>
+</html>

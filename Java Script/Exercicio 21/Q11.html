@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 11</title>
+</head>
+<body>
+    <script>
+        let somaDosPositivos = 0;
+        let somaDosNegativos = 0;
+        
+        for (let i = 0; i < 10; i++) {
+            const num = parseInt(prompt(`Insira o ${i + 1}º número:`));
+            if (num > 0) somaDosPositivos += num;
+            else if (num < 0) somaDosNegativos += num;
+        }
+        alert(`Soma de Positivos: ${somaDosPositivos} | Soma de Negativos: ${somaDosNegativos}`);
+    </script>
+</body>
+</html>

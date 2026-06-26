@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+<body>
+    <script>
+        const listaNumeros = [];
+        for (let i = 0; i < 5; i++) {
+            listaNumeros.push(parseInt(prompt(`Digite o ${i + 1}º número inteiro:`)));
+        }
+        alert("Números na ordem inversa: " + listaNumeros.reverse().join(", "));
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 25</title>
+</head>
+<body>
+    <script>
+        const tabela = [];
+        for(let i=0; i<4; i++) {
+            tabela[i] = [];
+            for(let j=0; j<4; j++) tabela[i][j] = parseInt(prompt(`Preencher posição [${i}][${j}]:`));
+        }
+        
+        let resultadoColunas = "Soma das Colunas:\n";
+        for(let j=0; j<4; j++) {
+            let acumuladorColuna = 0;
+            for(let i=0; i<4; i++) acumuladorColuna += tabela[i][j];
+            resultadoColunas += `Coluna ${j}: ${acumuladorColuna}\n`;
+        }
+        alert(resultadoColunas);
+    </script>
+</body>
+</html>

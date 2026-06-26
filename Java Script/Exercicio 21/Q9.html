@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 09</title>
+</head>
+<body>
+    <script>
+        let contPositivos = 0;
+        let contNegativos = 0;
+        
+        for (let i = 0; i < 10; i++) {
+            const valor = parseInt(prompt(`Digite o ${i + 1}º número:`));
+            if (valor > 0) contPositivos++;
+            else if (valor < 0) contNegativos++;
+        }
+        alert(`Total de Positivos: ${contPositivos} \nTotal de Negativos: ${contNegativos}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06</title>
+</head>
+<body>
+    <script>
+       const sequencia = [];
+        for (let i = 0; i < 10; i++) {
+            sequencia.push(parseInt(prompt(`Digite o ${i + 1}º número:`)));
+        }
+        sequencia.sort((a, b) => a - b);
+        alert("Valores ordenados: " + sequencia.join(", "));
+    </script>
+</body>
+</html>

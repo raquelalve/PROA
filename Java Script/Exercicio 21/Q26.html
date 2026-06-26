@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 25</title>
+</head>
+<body>
+    <script>
+        const arr1 = [[],[]], arr2 = [[],[]];
+        
+        alert("Preencha a primeira matriz:");
+        for(let i=0; i<2; i++) for(let j=0; j<2; j++) arr1[i][j] = parseInt(prompt(`M1 [${i}][${j}]:`));
+        
+        alert("Preencha a segunda matriz:");
+        for(let i=0; i<2; i++) for(let j=0; j<2; j++) arr2[i][j] = parseInt(prompt(`M2 [${i}][${j}]:`));
+        
+        const saoIguais = JSON.stringify(arr1) === JSON.stringify(arr2);
+        alert(saoIguais ? "Ambas as matrizes são idênticas." : "As matrizes possuem valores diferentes.");
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 25</title>
+</head>
+<body>
+    <script>
+        const matriz_1 = [[], []], matriz_2 = [[], []], matrizDiferenca = [];
+        
+        alert("Preencha a Matriz 1:");
+        for(let i=0; i<2; i++) for(let j=0; j<2; j++) matriz_1[i][j] = parseInt(prompt(`M1 [${i}][${j}]:`));
+        
+        alert("Preencha a Matriz 2:");
+        for(let i=0; i<2; i++) {
+            matrizDiferenca[i] = [];
+            for(let j=0; j<2; j++) {
+                matriz_2[i][j] = parseInt(prompt(`M2 [${i}][${j}]:`));
+                matrizDiferenca[i][j] = matriz_1[i][j] - matriz_2[i][j];
+            }
+        }
+        
+        let resultadoVisual = "Resultado da subtração:\n";
+        for(let i=0; i<2; i++) {
+            resultadoVisual += "[ " + matrizDiferenca[i].join(" | ") + " ]\n";
+        }
+        alert(resultadoVisual);
+    </script>
+</body>
+</html>

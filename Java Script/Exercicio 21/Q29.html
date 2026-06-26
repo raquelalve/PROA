@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 25</title>
+</head>
+<body>
+    <script>
+        const testeIdentidade = [];
+        for(let i=0; i<3; i++) {
+            testeIdentidade[i] = [];
+            for(let j=0; j<3; j++) testeIdentidade[i][j] = parseInt(prompt(`Valor [${i}][${j}]:`));
+        }
+        
+        const checarIdentidade = (
+            testeIdentidade[0][0] === 1 && testeIdentidade[1][1] === 1 && testeIdentidade[2][2] === 1 &&
+            testeIdentidade[0][1] === 0 && testeIdentidade[0][2] === 0 &&
+            testeIdentidade[1][0] === 0 && testeIdentidade[1][2] === 0 &&
+            testeIdentidade[2][0] === 0 && testeIdentidade[2][1] === 0
+        );
+        
+        alert(checarIdentidade ? "Resultado: É uma matriz identidade!" : "Resultado: Não corresponde a uma matriz identidade.");
+    </script>
+</body>
+</html>

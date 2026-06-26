@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 25</title>
+</head>
+<body>
+    <script>
+       const matrizM = [];
+        for(let i=0; i<3; i++) {
+            matrizM[i] = [];
+            for(let j=0; j<3; j++) matrizM[i][j] = parseInt(prompt(`Valor [${i}][${j}]:`));
+        }
+        
+        const produtoSecundario = matrizM[0][2] * matrizM[1][1] * matrizM[2][0];
+        alert("O produto da diagonal secundária é: " + produtoSecundario);
+    </script>
+</body>
+</html>
